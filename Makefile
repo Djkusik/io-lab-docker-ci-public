@@ -49,7 +49,7 @@ image:
 push: image
 	# TODO: two commands, first pushes the latest image, second pushes the image tagged with specyfic tag
 	docker push "$(SCHEMA_NAME)":latest
-	docker push "$(SCHEMA_NAME)":v1.0
+	docker push "$(SCHEMA_NAME)":"$(TAG)"
 	
 clean:
 
