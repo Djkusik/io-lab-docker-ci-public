@@ -44,6 +44,7 @@ image:
 		.
 	
   # TODO: last part of this command that tags just built image with a specyfic tag
+	docker tag "$(SCHEMA_NAME)" "$(SCHEMA_NAME)":"$(TAG)"
 	
 push: image
 	# TODO: two commands, first pushes the latest image, second pushes the image tagged with specyfic tag
